@@ -4,12 +4,7 @@ clean:
 	rm -rf build/
 build:
 	#This is not meant to be actually run as a makefile, run these commands as needed directly
-	rm -rf build/
-	mkdir -p build
-	cd build
-	cmake ..
-	make
-	cd ..
+	sh scripts/build.sh
 run:
 	./build/app.exe
 install:
